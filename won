@@ -1,0 +1,4 @@
+#won
+#Displays number of files and directories
+echo "The total no. of files and directories in this folder is: ";
+ls -l | wc -l;

@@ -1,0 +1,13 @@
+#MENU
+echo "0: Exit"
+echo "1: Show Date and Time"
+echo "2: List my Home Directory"
+echo "3: Display Calendar"
+read option
+case $option in
+	0)echo Good Bye;;
+	1)date;;
+	2)ls $HOME;;
+	3)cal;;
+	*)echo Invalid input...Terminating...;;
+esac

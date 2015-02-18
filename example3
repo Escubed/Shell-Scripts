@@ -1,0 +1,13 @@
+#Sample Shell Program with Shell
+#Execute the given command
+echo "The command you entered is: $1"
+case "$1" in
+	whoami) echo "Executing whoami..."
+		whoami;;
+	list) echo "Executing ls..."
+		ls;;
+	cal) echo "Executing cal..."
+		cal;;
+	*)echo "Invalid Input...Allowed inputs: whoami, list and cal...Exiting..."
+		exit 0;;
+esac
